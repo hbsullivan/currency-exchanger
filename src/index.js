@@ -23,7 +23,6 @@ function printError(uhOh) {
   if (uhOh[0].status === 404) {
     document.getElementById("output").innerText = "That currency doesn't exist. Please try again.";
   } else {
-    // let errorType = uhOh[1].error-type
     document.getElementById("output").innerText = `There was an error converting your currency: ${uhOh[0].status} ${uhOh[1].result}`;
   }
 }
