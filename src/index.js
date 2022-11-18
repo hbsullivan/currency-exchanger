@@ -38,11 +38,7 @@ function printRatesError(errors) {
 }
 
 function printElements(data) {
-  if (data[0].conversion_result.toFixed() === undefined) {
-    document.getElementById("output").innerText = "Please enter how much money you would like to exchange";
-  } else {
-    document.getElementById("output").innerText = `That will get you ${data[0].conversion_result.toFixed(2)} in ${data[0].target_code}`;
-  }
+  document.getElementById("output").innerText = `That will get you ${data[0].conversion_result.toFixed(2)} in ${data[0].target_code}`;
 }
 
 
