@@ -1,29 +1,41 @@
-# _{Application Name}_
+# _Currency Exchanger_
 
-#### By _**{List of contributors}**_
+#### By _Henry Sullivan_
 
-#### _{Brief description of application}_
+#### _Exchanges US dollars into multiple different currencies._
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _Javascript_
+* _esLint_
+* _Webpack_
+* _Babel_
+* _npm_
+* _ExchangeRatesAPI (https://www.exchangerate-api.com/)_
+
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This is an application that uses an Exchange Rates API to determine the conversion rate from US dollars to 5 different currencies. The app displayes the exchange rates, as well as takes a user input in US dollars and returns the value in selected currency._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _Clone this repository to your desktop._
+* _Navigate to the top level of the directory._
+* _Run the following command in your terminal:_
+```
+% npm install
+```
+* _Obtain a free API key from https://www.exchangerate-api.com/ _
+* _Store the API key in a file named .env under the variable name 'API_KEY'_
+* _Add the .env file to .gitignore_
+* _Run the following command in your terminal:_
+```
+npm run start
+```
 
 ## Known Bugs
 
@@ -31,7 +43,12 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## License
 
+MIT License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Copyright (c) [2022] [Henry Sullivan]
 
-Copyright (c) _date_ _author name(s)_
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
