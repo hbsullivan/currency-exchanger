@@ -19,9 +19,12 @@ function printElements(data) {
   document.getElementById("output").innerText = `That will get you ${data[0].conversion_result.toFixed(2)} in ${data[0].target_code}`;
 }
 
-function printError(error) {
-  if (error[0].status === 404) {
+function printError(uhOh) {
+  if (uhOh[0].status === 404) {
     document.getElementById("output").innerText = "That currency doesn't exist. Please try again.";
+  } else {
+    let errorType = uhOh[1].error-type;
+    document.getElementById("output").innerText = `There was an error converting your currency: error ${uhOh[0].status} ${errorType}`;
   }
 }
 
