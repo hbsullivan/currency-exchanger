@@ -6,3 +6,12 @@ body {
 .hidden{
   display: none;
 }
+
+#output{
+  color: red;
+  font-size: 20px;
+}
+
+#ex-rates{
+  font-size: 20px;
+}
