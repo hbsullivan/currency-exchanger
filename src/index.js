@@ -19,6 +19,12 @@ function printElements(data) {
   document.getElementById("output").innerText = `That will get you ${data[0].conversion_result.toFixed(2)} in ${data[0].target_code}`;
 }
 
+function printError(error) {
+  if (error[0].status === 404) {
+    document.getElementById("output").innerText = "That currency doesn't exist. Please try again.";
+  }
+}
+
 function handleFormSubmission(event) {
   event.preventDefault();
   const currency = document.getElementById("currency").value;
