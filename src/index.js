@@ -14,3 +14,18 @@ function getExchange(currency, amount) {
     printError(errorArray);
   });
 }
+
+function printElements(data) {
+  document.getElementById("output").innerText = `That will get you ${data[0].conversion_result.toFixed(2)} in ${data[0].target_code}`;
+}
+
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const currency = document.getElementById("currency").value;
+  const amount = document.getElementById("amount").value;
+  getExchange(currency, amount);
+}
+
+window.addEventListener("load", function() {
+  document.getElementById("input-form").addEventListener("submit", handleFormSubmission);
+});

@@ -7,7 +7,7 @@
   <div class="container">
     <h1>Currency Exchanger</h1>
     <p>Please tell us how much money you want to exchange, and to which currency.</p>
-    <form>
+    <form id="input-form">
       <label for="amount">Amount in US Dollars:</label>
       <input id="amount" type="number"><br>
       <label for="currency">Select your desired currency:</label>
@@ -19,7 +19,8 @@
         <option value="JPY">Yen</option>
       </select><br>
       <button type="submit" class="btn-warning">Exchange</button>
-    </form>
+    </form><br>
+    <p id="output"></p>
   </div>
 </body>
 </html>
