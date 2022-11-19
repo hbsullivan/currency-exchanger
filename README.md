@@ -23,16 +23,16 @@ _This is an application that uses an Exchange Rates API to determine the convers
 
 ## Setup/Installation Requirements
 
-* _Clone this repository to your desktop._
-* _Navigate to the top level of the directory._
-* _Run the following command in your terminal:_
+* Clone this repository to your desktop.
+* Navigate to the top level of the directory.
+* Run the following command in your terminal:
 ```
 % npm install
 ```
-* _Obtain a free API key from https://www.exchangerate-api.com/ _
-* _Store the API key in a file named .env under the variable name 'API_KEY'_
-* _Add the .env file to .gitignore_
-* _Run the following command in your terminal:_
+* Obtain a free API key from https://www.exchangerate-api.com/
+* Store the API key in a file named .env under the variable name 'API_KEY'
+* Add the .env file to .gitignore
+* Run the following command in your terminal:
 ```
 npm run start
 ```
